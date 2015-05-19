@@ -2,4 +2,9 @@ Hello World!
 Hello!
 It is raining!
 I love GitHub!
+<<<<<<< HEAD
 yo whats up
+=======
+This is new!
+I love dogs and cats!
+>>>>>>> origin/newBranch

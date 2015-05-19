@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="app.js"></script>
+    <script src="newArticle.js"></script>
+    <link href="app.css" rel="stylesheet" />
+    
+
+</head>
+<body ng-app="articleAdd">
+    <header class="container-fluid">
+        <h1>Header</h1>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            
+            <section class="col-sm-9 col-md-8 col-sm-push-3 col-md-push-2">
+                <article>
+                    <h2>
+                        Why I cant look at cows the same.
+                    </h2>
+                    <img src="images/rocky2.jpeg" />
+                    <div class="row">
+                        <p class="col-sm-10">
+                            Rocky just couldent stop puching the damn dead meat man. This website is so scary i cant go a day without going through
+                            the early days of PTSD thanks i will never be the same.
+                        </p>
+                        <div class="col-sm-2">
+                            <input type="button" class="btn btn-primary" value="more" />
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h2>
+                        Some people just want to watch the world burn.
+                    </h2>
+                    <img src="images/alfurnd.jpg" />
+                    <div class="row">
+                        <p class="col-sm-10">
+                            Ill tell you that alfred has seen some terrible stuff man and he would do anything to be someones butler
+                            to be honest its a level of creepy i cant contian with just this short article. Hes too smart man i think he is batman.
+                        </p>
+                        <div class="col-sm-2">
+                            <input type="button" class="btn btn-primary" value="more" />
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h2>
+                        Ill tell you sk8 boarders are chill
+                    </h2>
+                    <img src="images/Stacy-Peralta.jpg" />
+                    <div class="row">
+                        <p class="col-sm-10">
+                            Look at the flow in this guies hur man i cant stop wont stop. He has god it down like madonna.
+                        </p>
+                        <div class="col-sm-2">
+                            <input type="button" class="btn btn-primary" value="more" />
+                        </div>
+                    </div>
+                </article>
+
+
+
+            </section>
+            <aside class="col-sm-3 col-md-2 col-sm-pull-9 col-md-pull-8">
+                <h4 class="range-title">
+                    <b>X Game Sports</b>
+                </h4>
+                <div class="range-list">
+
+                    <a href="http://imgur.com/">
+                        <img src="images/poolBall.png" />
+                        <h4>Upvotes and Garaffes</h4>
+                    </a>
+
+                    <a href="http://www.cow.org/">
+                        <img src="images/badMitten.png" />
+                        <h4>www.cow.org</h4>
+                    </a>
+
+                    <a href="http://www.pingpong.com/">
+                        <img src="images/pingPong.png" />
+                        <h4>Pwing Pwong</h4>
+                    </a>
+
+                    <a href="https://www.kickstarter.com/projects/playtonic/yooka-laylee-a-3d-platformer-rare-vival">
+                        <img src="images/volleyBall.png" />
+                        <h4>Yooka-Laylee</h4>
+                    </a>
+
+                    <a href="http://www.fifa.com/">
+                        <img src="images/soccerBall.png" />
+                        <h4>Fifa M8</h4>
+                    </a>
+
+
+                </div>
+
+
+            </aside>
+            <aside class="super-hero-icon-list col-xs-12 col-md-2">
+                <a href="https://www.youtube.com/watch?v=pIGgGV7uwU4">
+                    <img src="images/batMan.png" />
+                    <h6>
+                        Batmurn
+                    </h6>
+
+                </a>
+                <a href="http://www.dccomics.com/characters/superman">
+                    <img src="images/superMan.png" />
+                    <h6>
+                        Supermurn
+                    </h6>
+
+                </a>
+                <a href="http://movies.disney.com/the-incredibles">
+                    <img src="images/incredibleMan.png" />
+                    <h6>
+                        incrudiburl
+                    </h6>
+
+                </a>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=10&cad=rja&uact=8&ved=0CEUQFjAJ&url=https%3A%2F%2Fwww.tumblr.com%2Ftagged%2Fspooderman&ei=hy5aVdrPJLCOsQS0m4DoCg&usg=AFQjCNGgv33JBR8pzHsMFJOWmjZipCPKrQ&bvm=bv.93564037,d.aWw">
+                    <img src="images/spiderMan.png" />
+                    <h6>
+                        Spoodermoon
+                    </h6>
+
+                </a>
+                <a href="https://www.youtube.com/watch?v=cyIIYerdlUA">
+                    <img src="images/flashAhhhhh.png" />
+                    <h6>
+                        Flash
+                    </h6>
+
+                </a>
+               
+          
+
+            </aside>
+            <div class="userList" ng-controller="MainContoller">
+                <aside class="col-sm-2">
+                    <a>
+                        <form class="newUser">
+                            <input placeholder="Enter your username here" type="text" ng-model="fromUserText" />
+
+                        </form>
+                    </a>
+                    <button class="myButton" ng-click=addUser() />
+                    <div ng-repeat="user in userList">
+                        {{ user.userName }}
+                        {{ user.time | date: 'mediumTime' }}
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <footer class="container-fluid">
+        <h1>Footer</h1>
+    </footer>
+
+</body>
+</html>

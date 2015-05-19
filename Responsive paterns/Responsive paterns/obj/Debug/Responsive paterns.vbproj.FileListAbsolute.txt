@@ -1,0 +1,9 @@
+c:\users\mwithington\documents\visual studio 2013\Projects\Responsive paterns\Responsive paterns\bin\Responsive paterns.dll.config
+c:\users\mwithington\documents\visual studio 2013\Projects\Responsive paterns\Responsive paterns\bin\Responsive paterns.dll
+c:\users\mwithington\documents\visual studio 2013\Projects\Responsive paterns\Responsive paterns\bin\Responsive paterns.pdb
+c:\users\mwithington\documents\visual studio 2013\Projects\Responsive paterns\Responsive paterns\bin\Responsive paterns.xml
+c:\users\mwithington\documents\visual studio 2013\Projects\Responsive paterns\Responsive paterns\obj\Debug\Responsive_paterns.Resources.resources
+c:\users\mwithington\documents\visual studio 2013\Projects\Responsive paterns\Responsive paterns\obj\Debug\Responsive paterns.vbproj.GenerateResource.Cache
+c:\users\mwithington\documents\visual studio 2013\Projects\Responsive paterns\Responsive paterns\obj\Debug\Responsive paterns.dll
+c:\users\mwithington\documents\visual studio 2013\Projects\Responsive paterns\Responsive paterns\obj\Debug\Responsive paterns.xml
+c:\users\mwithington\documents\visual studio 2013\Projects\Responsive paterns\Responsive paterns\obj\Debug\Responsive paterns.pdb

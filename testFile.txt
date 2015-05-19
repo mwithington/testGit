@@ -3,3 +3,4 @@ Hello!
 It is raining!
 I love GitHub!
 This is new!
+I love dogs and cats!
